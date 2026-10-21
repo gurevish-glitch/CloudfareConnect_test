@@ -1,0 +1,10 @@
+{
+	"d1_databases": [
+		{
+			"binding": "PREVIEW_DB",
+			"database_name": "workshop-preview-db",
+			"database_id": "515f02ae9b8ea4062c4e8eb0263124da",
+			"migrations_dir": "preview-migrations"
+		}
+	]
+}
