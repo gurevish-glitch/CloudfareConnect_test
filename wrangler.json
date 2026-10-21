@@ -10,7 +10,7 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_id": "6f6bd5c9-156c-4089-8f6a-6e26a47b3d57",
+			"database_id": "ec90d4f3-a681-4067-b838-362fa862b5a6",
 			"database_name": "activity-log-db"
 		}
 	],
