@@ -31,6 +31,7 @@ export function renderHtml(environment: string | undefined) {
           ${renderEnvironmentBadge(environment)}
           <h1>📋 Activity Log</h1>
           <p>Worker + D1 — add and delete entries, backed by a real database.</p>
+          <p id="entry-count">Total entries: 0</p>
         </header>
         <main>
           <form id="entry-form" class="entry-form">
@@ -68,6 +69,12 @@ export function renderHtml(environment: string | undefined) {
           }
 
           function renderEntries(entries) {
+            // Update entry count
+            const countEl = document.getElementById("entry-count");
+            if (countEl) {
+              countEl.textContent = "Total entries: " + entries.length;
+            }
+            
             listEl.innerHTML = "";
             if (entries.length === 0) {
               const li = document.createElement("li");
